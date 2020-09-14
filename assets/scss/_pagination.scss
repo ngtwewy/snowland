@@ -1,0 +1,51 @@
+/* -------------------------------------------------------------------------- */
+/*	分页
+/* -------------------------------------------------------------------------- */
+.pagination {
+  font-size: 20px;
+}
+.pagination .nav-links {
+  align-items: baseline;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.8em;
+  font-weight: 300;
+  // width: calc(100% + 2.5em);
+}
+
+.pagination-separator {
+  margin: 5em 0;
+}
+
+.nav-links > * {
+  // min-width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 0.4em;
+  border: 1px solid #3e3e3e;
+  border-radius: 3px;
+  margin: 1.5em 0.25em;
+  display: block;
+  padding-right: 0.65em;
+  padding-left: 0.65em;
+  &:first-child{margin-left: 0px;}
+}
+.nav-links > .current {
+  background-color: $my-button-bg-color;
+  border-color: $my-button-border-color;
+  color: #fff;
+}
+
+.nav-links .placeholder {
+  display: none;
+  visibility: hidden;
+}
+
+.pagination a {
+  text-decoration: none;
+  &:hover {
+    border-color: $my-button-border-color;
+  }
+}

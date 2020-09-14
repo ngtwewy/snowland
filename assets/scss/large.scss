@@ -1,0 +1,210 @@
+@import "_variables.scss";
+
+@media only screen and (min-width: 900px) {
+  /*顶部*/
+  .header {
+    width: 1210px;
+    margin: 0 auto;
+    padding: 25px 0px 30px 0px;
+    height: 60px;
+    .logo {
+      width: 190px;
+      height: 50px;
+      float: left;
+      display: block;
+      margin-left: 8px;
+      top: -8px;
+      img {
+        width: 100%;
+        height: auto;
+        float: left;
+      }
+    }
+  }
+
+  /*菜单*/
+  .nav-list {
+    width: 500px;
+    height: 40px;
+    float: left;
+    margin-top: 11px;
+    // background-color: greenyellow;
+    li {
+      width: 80px;
+      float: left;
+      margin-left: 0px;
+      position: relative;
+      a {
+        display: block;
+        color: #000;
+        text-align: center;
+        line-height: 40px;
+        min-width: 60px;
+      }
+      a:hover {
+        color: $my-text-color-hover;
+      }
+    }
+  }
+
+
+  /*搜索*/
+  .search {
+    width: 380px;
+    float: right;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 0;
+    border-radius: 3px;
+    .text {
+      float: left;
+      width: 376px;
+      height: 38px;
+      font-size: 16px;
+      border: none;
+      text-indent: 20px;
+      color: #000;
+      font-family: "Microsoft Yahei", "冬青黑体简体中文 w3";
+      outline: none;
+      transition: all 0.3s;
+      background: #fff;
+      border: 2px solid $my-button-border-color;
+      border-radius: 5px;
+    }
+    .text:focus {
+      background: #fff;
+    }
+    .button {
+      float: right;
+      width: 76px;
+      height: 38px;
+      line-height: 38px;
+      border: none;
+      background: $my-button-bg-color;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 16px;
+      outline: none;
+      border-radius: 0 5px 5px 0;
+      // margin-left: -76px;
+      margin-right:0;
+      margin-top: -40px;
+    }
+    :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #000;
+      font-size: 16px;
+    }
+    ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #000;
+      font-size: 16px;
+    }
+    input:-ms-input-placeholder {
+      color: #000;
+      font-size: 16px;
+    }
+    input::-webkit-input-placeholder {
+      color: #000;
+      font-size: 16px;
+    }
+    cite {
+      color: $my-text-color-hover;
+      font-style: normal;
+    }
+  }
+
+  // .breadcrumbs {
+  //     width:auto;
+  //     overflow:hidden;
+  //     background:#fcfcfc;
+  //     padding:18px 0px;
+  //     padding-left:22px;
+  //     border-radius:5px;
+  //     color:#a2a2a2;
+  //     border-top:1px solid #f1f1f1;
+  // }
+  // .breadcrumbs li {
+  //     float:left;
+  //     text-indent:9px;
+  // }
+  // .breadcrumbs li a {
+  //     margin-right:10px;
+  //     color:#a2a2a2;
+  // }
+
+  // .boxtheme {
+  //     width:790px;
+  //     margin:0 auto;
+  // }
+
+  .breadcrumbs-container {
+    width: 1200px;
+    overflow: hidden;
+    padding: 0 25px;
+    margin: 10px auto;
+    .breadcrumbs {
+      // background-color: #f8f8f8;
+      width: auto;
+      height: 35px;
+      line-height: 35px;
+      // padding-left: 10px;
+      border-radius: 5px;
+      li {
+        list-style: none;
+        float: left;
+        font-size: 15px;
+        color: #5f5f5f;
+        a {
+          font-size: 15px;
+          color: #5f5f5f;
+        }
+      }
+    }
+  }
+
+/* -------------------------------------------------------------------------- *
+ * main-container
+ */
+  .main-container {
+    width: 1200px;
+    margin: 0 auto;
+    .left-sider {
+      width: 800px;
+      float: left;
+    }
+    .right {
+      width: 400px;
+      float: right;
+    }
+    .right-sider {
+      width: 380px;
+    }
+  }
+
+
+/* -------------------------------------------------------------------------- *
+ * footer
+ */
+footer {
+  .footer-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .footer-info{
+      width: 380px;
+    }
+    .footer-links{
+      width: 380px;
+    }
+    .qrcode-container{
+      width: 280px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+    }
+  }
+}
+
+}/* @media only screen and (min-width: 900px)  */

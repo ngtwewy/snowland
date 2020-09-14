@@ -1,0 +1,1202 @@
+@charset "UTF-8";
+/**
+ * Author: ngtwewy <62006464@qq.com>
+ * Author URI: http://javascript.net.cn
+ * Theme URI: https://github.com/ngtwewy/snowland
+ * License: Apache Licence 2.0
+ * License URI: http://www.apache.org/licenses/LICENSE-2.0
+ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+/* logo 闪烁 */
+.logo {
+  position: relative;
+  overflow: hidden; }
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: rotate(-45deg);
+  opacity: 0.7;
+  animation: logoLights 2s ease-in 1s infinite; }
+
+@keyframes logoLights {
+  0% {
+    left: -160px;
+    top: 0; }
+  to {
+    left: 160px;
+    top: 0; } }
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: rotate(-45deg);
+  opacity: 0.8;
+  animation: logoLights2 2s ease-in 1s infinite; }
+
+@keyframes logoLights2 {
+  0% {
+    left: -130px;
+    top: 0; }
+  to {
+    left: 190px;
+    top: 0; } }
+
+/*
+node-sass --output-style compressed style.scss > ../assets/css/style.css
+node-sass --watch -r ./ -o  ../css/
+
+//单文件转换命令
+sass input.scss output.css
+
+//单文件监听命令
+sass --watch input.scss:output.css
+
+//如果你有很多的sass文件的目录，你也可以告诉sass监听整个目录：
+sass --watch app/sass:public/stylesheets
+*/
+/* -------------------------------------------------------------------------- *
+ * 颜色变量
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 透明度 */
+/* 文章场景相关 */
+/* -------------------------------------------------------------------------- *
+ * 默认的样式
+ */
+html {
+  -webkit-text-size-adjust: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ol,
+ul {
+  list-style: none; }
+
+body {
+  font-family: "Microsoft YaHei UI","Microsoft YaHei",SimSun,"Segoe UI",Tahoma,Helvetica,Sans-Serif;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  position: relative;
+  letter-spacing: 1px; }
+
+a {
+  color: #333;
+  font-size: 17px;
+  text-decoration: none;
+  transition: color 0.3s;
+  letter-spacing: 1px; }
+
+a:hover {
+  color: #32802b; }
+
+/* -------------------------------------------------------------------------- *
+ * 图标
+ */
+@font-face {
+  font-family: "iconfont";
+  /* project id 1683083 */
+  src: url("http://at.alicdn.com/t/font_1683083_rxu7r44mbma.eot");
+  src: url("http://at.alicdn.com/t/font_1683083_rxu7r44mbma.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1683083_rxu7r44mbma.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1683083_rxu7r44mbma.woff") format("woff"), url("http://at.alicdn.com/t/font_1683083_rxu7r44mbma.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1683083_rxu7r44mbma.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* -------------------------------------------------------------------------- *
+ * 顶部
+ */
+.header {
+  overflow: hidden;
+  background: #fff;
+  width: 100%; }
+  .header .logo {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .header .logo img {
+    width: 100%;
+    height: auto;
+    display: block; }
+
+/* -------------------------------------------------------------------------- *
+ * 菜单
+ */
+.nav-list {
+  overflow: hidden;
+  float: left;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 25px; }
+  .nav-list li {
+    width: 20%;
+    float: left; }
+    .nav-list li a {
+      display: block;
+      color: #5f5f5f;
+      text-align: center;
+      line-height: 42px;
+      width: 100%;
+      font-size: 15px; }
+
+/* -------------------------------------------------------------------------- *
+ * 幻灯样式
+ */
+.swiper-pagination-bullet-active {
+  background-color: #32802b !important; }
+
+/* -------------------------------------------------------------------------- *
+ * 搜索
+ */
+.search {
+  width: 88%;
+  overflow: hidden;
+  float: left;
+  margin-left: 6%;
+  margin-top: 10px; }
+  .search .text {
+    width: 100%;
+    height: 35px;
+    line-height: 32px;
+    font-size: 16px;
+    border: none;
+    color: #000;
+    outline: none;
+    border-radius: 5px;
+    text-indent: 6%;
+    background: #f8f8f8;
+    float: left; }
+  .search .text:focus {
+    color: #000; }
+  .search .button {
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 2%;
+    background: #32802b;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    outline: none; }
+  .search input:-ms-input-placeholder {
+    color: #000;
+    font-size: 15px; }
+  .search input::-webkit-input-placeholder {
+    color: #000;
+    font-size: 15px; }
+
+.breadcrumbs {
+  width: auto;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 20px; }
+  .breadcrumbs li {
+    list-style: none;
+    float: left;
+    font-size: 15px;
+    color: #5f5f5f; }
+    .breadcrumbs li a {
+      font-size: 15px;
+      color: #5f5f5f; }
+
+/* 主容器 */
+.main-container {
+  overflow: hidden;
+  padding: 0 25px;
+  min-height: calc(100vh - 137px - 80px); }
+
+/* 幻灯片样式 */
+.swiper-container {
+  margin-top: 20px;
+  border-radius: 5px; }
+  .swiper-container .swiper-slide img {
+    width: 100%; }
+  .swiper-container .swiper-container {
+    width: 100%;
+    height: 100%; }
+  .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+
+/* 文章列表样式 */
+.media-list {
+  margin-top: 20px; }
+
+.media-item {
+  width: 100%;
+  padding: 25px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #eeeeee;
+  overflow: hidden; }
+  .media-item .media-title {
+    height: 20px;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .media-item .media-widget {
+    margin-top: 10px;
+    color: #444;
+    display: flex;
+    justify-content: space-between; }
+    .media-item .media-widget .media-widget-left {
+      margin-right: 30px; }
+      .media-item .media-widget .media-widget-left .media-author {
+        display: flex;
+        color: #4b4b4b;
+        align-items: center; }
+        .media-item .media-widget .media-widget-left .media-author img {
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          margin-right: 10px; }
+      .media-item .media-widget .media-widget-left .media-description {
+        margin-top: 15px;
+        line-height: 20px;
+        font-size: 13px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden; }
+    .media-item .media-widget .media-widget-right {
+      width: 120px; }
+      .media-item .media-widget .media-widget-right img {
+        width: 120px;
+        height: 70px;
+        margin-top: 5px;
+        border-radius: 3px;
+        object-fit: cover; }
+  .media-item .media-info {
+    margin-top: 10px;
+    color: #898989; }
+    .media-item .media-info a {
+      font-size: 12px;
+      color: #898989; }
+
+.media-item:first-child {
+  padding-top: 0px; }
+
+/* -------------------------------------------------------------------------- *
+ * footer
+ */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #424244;
+  margin-top: 50px; }
+  footer .footer-container {
+    width: calc(100vw - 50px);
+    min-height: 300px;
+    margin: 0 auto;
+    color: #ffffff66;
+    overflow: hidden; }
+    footer .footer-container a {
+      color: #ffffff66; }
+    footer .footer-container .footer-info {
+      margin-top: 30px;
+      line-height: 30px;
+      font-size: 15px; }
+      footer .footer-container .footer-info img {
+        width: 150px; }
+      footer .footer-container .footer-info p {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+    footer .footer-container .footer-links {
+      font-size: 12px;
+      margin-top: 30px;
+      overflow: hidden; }
+      footer .footer-container .footer-links h2 {
+        margin-bottom: 30px; }
+      footer .footer-container .footer-links a {
+        display: block;
+        float: left;
+        font-size: 12px;
+        margin: 0px 10px 15px 0px; }
+    footer .footer-container .qrcode-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px; }
+      footer .footer-container .qrcode-container .qrcode {
+        width: 130px;
+        float: left;
+        text-align: center; }
+        footer .footer-container .qrcode-container .qrcode img {
+          width: 100%; }
+        footer .footer-container .qrcode-container .qrcode p {
+          margin-top: 5px;
+          font-size: 14px; }
+  footer .footer-bottom {
+    margin-top: 30px;
+    overflow: hidden;
+    color: #ffffff66;
+    padding: 0px; }
+    footer .footer-bottom a {
+      color: #ffffff66; }
+    footer .footer-bottom .copyright {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      margin-top: 20px;
+      border-top: 1px solid #636363; }
+      footer .footer-bottom .copyright a {
+        font-size: 12px; }
+      footer .footer-bottom .copyright b {
+        color: #ff4425;
+        font-size: 18px; }
+
+/* -------------------------------------------------------------------------- *
+ * 右边栏目
+ */
+.right-sider {
+  width: 100%;
+  min-height: 200px;
+  float: right; }
+
+.right-sider-title {
+  line-height: 27px;
+  width: 80px;
+  text-align: center;
+  padding: 2px 16px 0px 16px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+  background: #32802b;
+  border-radius: 5px;
+  clear: both; }
+
+.tag-container {
+  margin-top: 20px; }
+  .tag-container .tag-list {
+    width: 100%;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px; }
+    .tag-container .tag-list .tag-item {
+      height: 25px;
+      overflow: hidden;
+      border-radius: 3px;
+      line-height: 25px;
+      margin: 0 20px 20px 0;
+      background-color: #ebebeb;
+      text-align: center; }
+      .tag-container .tag-list .tag-item a {
+        font-size: 13px;
+        display: block;
+        height: 100%;
+        padding: 0 6px;
+        color: #6e6e6e; }
+        .tag-container .tag-list .tag-item a:hover {
+          background-color: #72c96a;
+          color: #fff; }
+    .tag-container .tag-list .tag-item.current-menu-item {
+      background-color: #72c96a; }
+      .tag-container .tag-list .tag-item.current-menu-item a {
+        color: #fff; }
+
+/* 文章列表 文章模块 */
+.article-container {
+  margin-top: 30px; }
+  .article-container .article-list {
+    counter-reset: num1 0; }
+    .article-container .article-list .article-item {
+      height: 38px;
+      line-height: 38px; }
+      .article-container .article-list .article-item a {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .article-container .article-list .article-item a::before {
+        counter-increment: num1 1;
+        content: counter(num1) ". "; }
+    .article-container .article-list .article-item:first-child {
+      margin-top: 15px; }
+
+/* 文章页 singular.php */
+.singular-article-container {
+  margin-top: 20px; }
+  .singular-article-container .article-title {
+    font-size: 22px;
+    font-weight: bold; }
+  .singular-article-container .article-meta {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b3b3b3; }
+    .singular-article-container .article-meta a {
+      font-size: 14px;
+      color: #b3b3b3; }
+    .singular-article-container .article-meta span {
+      margin-right: 10px; }
+  .singular-article-container .article-content {
+    overflow: hidden;
+    margin-top: 15px;
+    font-size: 15px;
+    padding-bottom: 50px;
+    line-height: 25px; }
+    .singular-article-container .article-content img {
+      max-width: 100%; }
+    .singular-article-container .article-content pre {
+      line-height: 18px; }
+    .singular-article-container .article-content p {
+      margin-top: 10px; }
+    .singular-article-container .article-content h3 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 20px; }
+
+.hljs {
+  /*background-color: transparent !important;*/
+  padding: 9.5px !important; }
+
+pre {
+  font-size: 13px !important;
+  background-color: #f0f0f0 !important;
+  border-color: #f0f0f0 !important; }
+
+/* -------------------------------------------------------------------------- *
+ * 底部按钮 回到顶部
+ */
+.to-top {
+  background: url(../images/top.png) no-repeat;
+  background-size: 60%;
+  background-position: center center;
+  cursor: pointer;
+  display: none;
+  width: 38px;
+  height: 38px;
+  background-color: #88888a;
+  z-index: 1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  margin: 0 0 7px 0;
+  transition: 0.4s;
+  border-radius: 10px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+/* -------------------------------------------------------------------------- *
+ * search
+ */
+.no-content {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 16px; }
+  .no-content p {
+    margin-top: 50px; }
+
+.search-title {
+  margin-top: 30px; }
+
+/* -------------------------------------------------------------------------- */
+/*	分页
+/* -------------------------------------------------------------------------- */
+.pagination {
+  font-size: 20px; }
+
+.pagination .nav-links {
+  align-items: baseline;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.8em;
+  font-weight: 300; }
+
+.pagination-separator {
+  margin: 5em 0; }
+
+.nav-links > * {
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 0.4em;
+  border: 1px solid #3e3e3e;
+  border-radius: 3px;
+  margin: 1.5em 0.25em;
+  display: block;
+  padding-right: 0.65em;
+  padding-left: 0.65em; }
+  .nav-links > *:first-child {
+    margin-left: 0px; }
+
+.nav-links > .current {
+  background-color: #32802b;
+  border-color: #32802b;
+  color: #fff; }
+
+.nav-links .placeholder {
+  display: none;
+  visibility: hidden; }
+
+.pagination a {
+  text-decoration: none; }
+  .pagination a:hover {
+    border-color: #32802b; }
+
+/*
+node-sass --output-style compressed style.scss > ../assets/css/style.css
+node-sass --watch -r ./ -o  ../css/
+
+//单文件转换命令
+sass input.scss output.css
+
+//单文件监听命令
+sass --watch input.scss:output.css
+
+//如果你有很多的sass文件的目录，你也可以告诉sass监听整个目录：
+sass --watch app/sass:public/stylesheets
+*/
+/* -------------------------------------------------------------------------- *
+ * 颜色变量
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 透明度 */
+/* 文章场景相关 */
+@media only screen and (min-width: 900px) {
+  /*顶部*/
+  .header {
+    width: 1210px;
+    margin: 0 auto;
+    padding: 25px 0px 30px 0px;
+    height: 60px; }
+    .header .logo {
+      width: 190px;
+      height: 50px;
+      float: left;
+      display: block;
+      margin-left: 8px;
+      top: -8px; }
+      .header .logo img {
+        width: 100%;
+        height: auto;
+        float: left; }
+  /*菜单*/
+  .nav-list {
+    width: 500px;
+    height: 40px;
+    float: left;
+    margin-top: 11px; }
+    .nav-list li {
+      width: 80px;
+      float: left;
+      margin-left: 0px;
+      position: relative; }
+      .nav-list li a {
+        display: block;
+        color: #000;
+        text-align: center;
+        line-height: 40px;
+        min-width: 60px; }
+      .nav-list li a:hover {
+        color: #32802b; }
+  /*搜索*/
+  .search {
+    width: 380px;
+    float: right;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 0;
+    border-radius: 3px; }
+    .search .text {
+      float: left;
+      width: 376px;
+      height: 38px;
+      font-size: 16px;
+      border: none;
+      text-indent: 20px;
+      color: #000;
+      font-family: "Microsoft Yahei", "冬青黑体简体中文 w3";
+      outline: none;
+      transition: all 0.3s;
+      background: #fff;
+      border: 2px solid #32802b;
+      border-radius: 5px; }
+    .search .text:focus {
+      background: #fff; }
+    .search .button {
+      float: right;
+      width: 76px;
+      height: 38px;
+      line-height: 38px;
+      border: none;
+      background: #32802b;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 16px;
+      outline: none;
+      border-radius: 0 5px 5px 0;
+      margin-right: 0;
+      margin-top: -40px; }
+    .search :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #000;
+      font-size: 16px; }
+    .search ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #000;
+      font-size: 16px; }
+    .search input:-ms-input-placeholder {
+      color: #000;
+      font-size: 16px; }
+    .search input::-webkit-input-placeholder {
+      color: #000;
+      font-size: 16px; }
+    .search cite {
+      color: #32802b;
+      font-style: normal; }
+  .breadcrumbs-container {
+    width: 1200px;
+    overflow: hidden;
+    padding: 0 25px;
+    margin: 10px auto; }
+    .breadcrumbs-container .breadcrumbs {
+      width: auto;
+      height: 35px;
+      line-height: 35px;
+      border-radius: 5px; }
+      .breadcrumbs-container .breadcrumbs li {
+        list-style: none;
+        float: left;
+        font-size: 15px;
+        color: #5f5f5f; }
+        .breadcrumbs-container .breadcrumbs li a {
+          font-size: 15px;
+          color: #5f5f5f; }
+  /* -------------------------------------------------------------------------- *
+ * main-container
+ */
+  .main-container {
+    width: 1200px;
+    margin: 0 auto; }
+    .main-container .left-sider {
+      width: 800px;
+      float: left; }
+    .main-container .right {
+      width: 400px;
+      float: right; }
+    .main-container .right-sider {
+      width: 380px; }
+  /* -------------------------------------------------------------------------- *
+ * footer
+ */
+  footer .footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    footer .footer-container .footer-info {
+      width: 380px; }
+    footer .footer-container .footer-links {
+      width: 380px; }
+    footer .footer-container .qrcode-container {
+      width: 280px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px; } }
+
+/* @media only screen and (min-width: 900px)  */
+/**
+瀑布流
+*/
+.media-list.waterfall {
+  column-count: 3;
+  column-gap: 20px; }
+  .media-list.waterfall .media-image {
+    break-inside: avoid;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7; }
+    .media-list.waterfall .media-image img {
+      max-width: 100%; }
+    .media-list.waterfall .media-image a:last-child {
+      display: block;
+      height: 22px;
+      line-height: 22px;
+      font-size: 12px;
+      text-align: center; }
+  .media-list.waterfall .media-image:hover {
+    transform: scale(105%); }
+
+/**
+单页*/
+.main-container.page {
+  width: 900px;
+  font-size: 15px;
+  overflow: hidden; }
+  .main-container.page .page-title {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-top: 2em;
+    margin-bottom: .6em;
+    text-align: center; }
+  .main-container.page .page-meta {
+    margin: 2rem 0rem 5rem 0rem; }
+  .main-container.page .page-content {
+    min-height: 430px;
+    font-size: 16px;
+    line-height: 30px;
+    overflow: hidden; }
+    .main-container.page .page-content h1, .main-container.page .page-content h2, .main-container.page .page-content h3 {
+      line-height: 60px;
+      font-weight: 900; }
+    .main-container.page .page-content img {
+      max-width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .main-container.page .page-content p {
+      margin-bottom: 0px; }
+    .main-container.page .page-content .btn {
+      display: block;
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 13px;
+      text-align: center;
+      background-color: #32802b;
+      border-color: #32802b;
+      border-radius: 3px;
+      color: #fff;
+      margin: 30px auto 30px auto; }
+
+.about-text {
+  min-height: 200px;
+  background-color: green;
+  z-index: 22999999; }
+
+.icon {
+  max-width: 780px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px auto; }
+
+.img-con {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 50%;
+  animation: shake 10s linear infinite; }
+
+.rotate-img {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+  animation: rotation 38s linear infinite; }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px); }
+  94% {
+    opacity: 0.7;
+    transform: translate(2px, 2px) scale(1, 1); }
+  95% {
+    opacity: 0.7;
+    transform: translate(4px, 2px) scale(1.01, 1.01); }
+  96% {
+    opacity: 0.4;
+    transform: translate(2px, 0px) scale(1, 1); }
+  97% {
+    opacity: 0.2;
+    transform: translate(-2px, 4px) scale(1.02, 1.02); }
+  98% {
+    opacity: 0.7;
+    transform: translate(-4px, -2px) scale(1.01, 1.01); }
+  99% {
+    opacity: 0.0;
+    transform: translate(-2px, 0px) scale(1.02, 1.02); }
+  100% {
+    opacity: 0.7;
+    transform: translate(-2px, 3px) scale(1.01, 1.01); } }
+
+/* -------------------------------------------------------------------------- *
+ * 404 页面未找到
+ */
+.page-no-found {
+  width: 100%;
+  max-width: 450px;
+  margin: 10px auto; }
+  .page-no-found img {
+    width: 100%; }
+  .page-no-found p {
+    font-size: 30px;
+    text-align: center; }
+  .page-no-found a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    font-size: 13px;
+    margin: 20px auto 0px auto;
+    line-height: 30px;
+    text-align: center;
+    background-color: #01bf87;
+    border-radius: 3px; }
+    .page-no-found a:hover {
+      background-color: #01a574; }

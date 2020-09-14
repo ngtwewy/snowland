@@ -1,0 +1,73 @@
+/*
+node-sass --output-style compressed style.scss > ../assets/css/style.css
+node-sass --watch -r ./ -o  ../css/
+
+//单文件转换命令
+sass input.scss output.css
+
+//单文件监听命令
+sass --watch input.scss:output.css
+
+//如果你有很多的sass文件的目录，你也可以告诉sass监听整个目录：
+sass --watch app/sass:public/stylesheets
+*/
+
+/* -------------------------------------------------------------------------- *
+ * 颜色变量
+ */
+/* 行为相关颜色 */
+$my-color-primary: #007aff;
+$my-color-success: #4cd964;
+$my-color-warning: #f0ad4e;
+$my-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$my-text-color: #333; //基本色
+$my-text-color-inverse: #fff; //反色
+$my-text-color-grey: #999; //辅助灰色，如加载更多的提示信息
+$my-text-color-placeholder: #808080;
+$my-text-color-disable: #c0c0c0;
+$my-text-color-hover: #32802b;
+
+/* 背景颜色 */
+$my-bg-color: #ffffff;
+$my-bg-color-grey: #f8f8f8;
+$my-bg-color-hover: #f1f1f1; //点击状态颜色
+$my-bg-color-mask: rgba(0, 0, 0, 0.4); //遮罩颜色
+$my-bg-color-footer: #424244;
+
+/* 边框颜色 */
+$my-border-color: #c8c7cc;
+
+/* 文字尺寸 */
+$my-font-size-sm: 24px;
+$my-font-size-base: 28px;
+$my-font-size-lg: 32px;
+
+/* 图片尺寸 */
+$my-img-size-sm: 40px;
+$my-img-size-base: 52px;
+$my-img-size-lg: 80px;
+
+/* Border Radius */
+$my-border-radius-sm: 4px;
+$my-border-radius-base: 6px;
+$my-border-radius-lg: 12px;
+$my-border-radius-circle: 50%;
+
+/* 透明度 */
+$my-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$my-color-title: #2c405a; // 文章标题颜色
+$my-font-size-title: 40px;
+$my-color-subtitle: #555555; // 二级标题颜色
+$my-font-size-subtitle: 36px;
+$my-color-paragraph: #3f536e; // 文章段落颜色
+$my-font-size-paragraph: 30px;
+
+$my-button-bg-color: #32802b;
+$my-button-border-color: #32802b;
+$my-button-border-radius: 2rpx;
+$my-button-background: linear-gradient(140deg, #2f85fc 0%, #00ade4 100%),
+  linear-gradient(#ff6b01, #ff6b01);
