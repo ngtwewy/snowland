@@ -618,6 +618,8 @@ a:hover {
     .media-item .media-info a {
       font-size: 12px;
       color: #898989; }
+    .media-item .media-info span {
+      margin-right: 10px; }
 
 .media-item:first-child {
   padding-top: 0px; }

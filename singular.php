@@ -12,6 +12,9 @@
 get_header();
 ?>
 
+<?php 
+setPostViews(get_the_ID()); // 更新文章浏览次数
+?> 
 
 
 <div class="main-container">
@@ -27,7 +30,8 @@ get_header();
                     <?php the_title(); ?>
                 </div>
                 <div class="article-meta">
-                    阅读  暂无评论 <?php the_time('Y年m月d日 H:i');?>		
+                    <span>阅读 <?php echo getPostViews(get_the_ID()); ?> </span>
+                    <span>时间 <?php the_time('Y-m-d H:i');?> </span>
                 </div>
                 <div class="article-content">
                     <?php 

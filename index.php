@@ -53,9 +53,8 @@ get_header();
                                 </div>
                             </div>
                             <div class="media-info">
-                                阅读
-                                暂无评论
-                                <?php the_time("Y-m-d H:i")?>
+                                <span>阅读 <?php echo getPostViews(get_the_ID()); ?> </span>
+                                <span>时间 <?php the_time('Y-m-d H:i');?> </span>
                             </div>
                         </div><!-- ./ media-item -->
                     <?php endwhile; ?>

@@ -9,12 +9,19 @@
  * License URI: http://www.apache.org/licenses/LICENSE-2.0
  */
 
+/**
+ * 引用其他函数
+ */
+require get_template_directory() . '/inc/views.php'; // 文章点击数
 
+
+/**
+ * 打印变量
+ */
 function p($var){
     echo "<pre>";
     print_r($var);
 }
-
 
 
 /**
