@@ -18,15 +18,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
-    
+    <?php
+        $keywords = "神奇故事,故事,历史,历史故事,讲故事,社会";
+        $description = "是故事把人们汇集起来，是故事让人们得到其他，比故事更神奇的，是现实世界，神奇故事，一个神奇的网站";
+        if (is_home()) {
+            
+        } elseif (is_category()) {
+            $keywords = single_cat_title('', false);
+            $description = category_description();
+        } elseif (is_tag()) {
+            $keywords = single_tag_title('', false);
+            $description = tag_description();
+        } elseif(is_single()){
+            $description = get_the_excerpt();
+        }
+        $keywords = trim(strip_tags($keywords));
+        $description = trim(strip_tags($description));
+    ?>
+    <meta name="keyword" content="<?php echo $keywords ?>">
+    <meta name="description" content="<?php echo $description ?>">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/swiper/swiper.css" />
     <script src="<?php bloginfo('template_url'); ?>/assets/swiper/swiper.min.js"></script>
-    <script>
-        window.onload = function () {
-
-        } 
-	</script>
 	<style>
         .recentcomments a {
             display: inline !important;
@@ -71,9 +84,6 @@
         /*
         <ul class="nav-list">
             <li><a href="/">首页</a></li>
-            <li><a href="#">博客</a></li>
-            <li><a href="#">项目</a></li>
-            <li><a href="#">接单</a></li>
             <li><a href="#">关于</a></li>
         </ul>
         */

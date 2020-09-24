@@ -83,22 +83,22 @@ function get_breadcrumbs()
         if (is_category()) {
             $catTitle = single_cat_title("", false);
             $cat = get_cat_ID($catTitle);
-            echo " » " . get_category_parents($cat, TRUE, " » ") . "";
+            echo " > " . get_category_parents($cat, TRUE, " > ") . "";
         } elseif (is_archive() && !is_category()) {
-            echo " » Archives";
+            echo " > Archives";
         } elseif (is_search()) {
-            echo " » Search Results";
+            echo " > Search Results";
         } elseif (is_404()) {
-            echo " » 404 Not Found";
+            echo " > 404 Not Found";
         } elseif (is_single()) {
             $category = get_the_category();
 			$category_id = get_cat_ID($category[0]->cat_name);
-            echo ' » ' . get_category_parents($category_id, TRUE, " » ");
+            echo ' > ' . get_category_parents($category_id, TRUE, " > ");
 			// echo the_title('', '', FALSE) . "";
         } elseif (is_page()) {
             $post = $wp_query->get_queried_object();
             if ($post->post_parent == 0) {
-                echo " » " . the_title('', '', FALSE) . "";
+                echo " > " . the_title('', '', FALSE) . "";
             } else {
                 $title = the_title('', '', FALSE);
                 $ancestors = array_reverse(get_post_ancestors($post->ID));
@@ -107,9 +107,9 @@ function get_breadcrumbs()
                     if (
                         $ancestor != end($ancestors)
                     ) {
-                        echo ' » ' . strip_tags(apply_filters('single_post_title', get_the_title($ancestor))) . '';
+                        echo ' > ' . strip_tags(apply_filters('single_post_title', get_the_title($ancestor))) . '';
                     } else {
-                        echo ' » ' . strip_tags(apply_filters('single_post_title', get_the_title($ancestor))) . '';
+                        echo ' > ' . strip_tags(apply_filters('single_post_title', get_the_title($ancestor))) . '';
                     }
                 }
             }
