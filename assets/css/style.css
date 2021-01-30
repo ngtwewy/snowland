@@ -377,6 +377,93 @@ sass --watch app/sass:public/stylesheets
 /* Border Radius */
 /* 透明度 */
 /* 文章场景相关 */
+.comment-list {
+  width: 100%; }
+  .comment-list .comment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px; }
+    .comment-list .comment .gravatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45px;
+      margin-right: 30px; }
+      .comment-list .comment .gravatar .avatar {
+        width: 45px;
+        height: 45px;
+        background-color: #ebebeb; }
+      .comment-list .comment .gravatar a {
+        font-size: 13px;
+        margin-top: 5px; }
+    .comment-list .comment .comment_content {
+      font-size: 15px; }
+      .comment-list .comment .comment_content .clearfix {
+        display: flex;
+        font-size: 16px;
+        align-items: flex-end; }
+        .comment-list .comment .comment_content .clearfix a {
+          font-size: 16px; }
+        .comment-list .comment .comment_content .clearfix .author_name {
+          font-size: 18px; }
+          .comment-list .comment .comment_content .clearfix .author_name a {
+            color: #6d757a; }
+        .comment-list .comment .comment_content .clearfix .comment-edit-link {
+          margin-left: 20px;
+          font-size: 12px;
+          color: #818181; }
+      .comment-list .comment .comment_content .comment_text {
+        padding-top: 20px;
+        font-size: 13px;
+        line-height: 20px; }
+        .comment-list .comment .comment_content .comment_text a {
+          font-size: 13px; }
+      .comment-list .comment .comment_content .comment-meta {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #898989; }
+
+#commentform {
+  margin: 30px 0px 50px; }
+  #commentform li.clearfix {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; }
+    #commentform li.clearfix label {
+      width: 70px;
+      font-size: 13px; }
+      #commentform li.clearfix label span {
+        color: #f54646;
+        margin-left: 5px; }
+    #commentform li.clearfix input[type='text'] {
+      height: 30px;
+      width: 30%;
+      min-width: 200px;
+      border-radius: 3px;
+      border: 1px solid #818181; }
+    #commentform li.clearfix textarea {
+      height: 90px;
+      width: 50%;
+      min-width: 250px;
+      border-radius: 3px;
+      border: 1px solid #818181;
+      padding: 8px;
+      font-size: 13px; }
+    #commentform li.clearfix .button.medium {
+      line-height: 20px;
+      height: 20px;
+      width: 80px;
+      text-align: center;
+      padding: 2px 8px;
+      font-size: 13px;
+      margin-left: 70px;
+      color: #fff;
+      font-weight: normal;
+      background: #32802b;
+      border-radius: 5px;
+      clear: both; }
+
 /* -------------------------------------------------------------------------- *
  * 默认的样式
  */

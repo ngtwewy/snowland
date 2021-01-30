@@ -198,6 +198,8 @@ function get_menu_parent_by_id($menuName)
 }
 
 
+// wp_nav_menu的li标签添加自定义class类
+// https://blog.csdn.net/u012809520/article/details/95640336
 function maker_menu_classes($classes, $item, $args){
 	// if($args->theme_location == "Menu1"){ // "Menu1" 是菜单ID
 	// 	$classes[] = 'cxxxxxx';
@@ -208,12 +210,33 @@ function maker_menu_classes($classes, $item, $args){
 }
 add_filter('nav_menu_css_class', 'maker_menu_classes', 1, 3);
 
-// add_filter('nav_menu_css_class', 'my_css_attributes_filter');
-// add_filter('nav_menu_item_id', 'my_css_attributes_filter');
-// add_filter('page_css_class', 'my_css_attributes_filter');
-// function my_css_attributes_filter($var){
-// 	return is_array($var) ? array_intersect( $var, array('current-menu-item', 'current-post-ancestor', 'current-menu-parent' )) : "";
-// }
+
+/**
+* WordPress 禁用 Emoji 功能
+*/
+function disable_emojis() {
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+	add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
+}
+add_action( 'init', 'disable_emojis' );
+
+function disable_emojis_tinymce( $plugins ) {
+	return array_diff( $plugins, array( 'wpemoji' ) );
+}
+
+
+
+/**
+ * 引入主题后台面板
+ */
+require get_template_directory() . '/inc/panel.php';
+
 
 
 

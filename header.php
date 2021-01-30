@@ -53,12 +53,18 @@
     <!-- <?php body_class(); ?> -->
 
 	<?php
-	wp_body_open();
+    wp_body_open();
+    
+    $my_config = getOptions();
 	?>
 
     <header class="header">
         <a href="/" class="logo" title="" rel="home">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="神奇故事">
+            <?php if($my_config['site_logo']){?>
+                <img src="<?php echo $site_logo; ?>" alt="<?php bloginfo('name'); ?>">
+            <?php }else{ ?>
+                <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="<?php bloginfo('name'); ?>">
+            <?php } ?>
         </a>
 
         <?php 

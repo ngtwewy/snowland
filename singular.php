@@ -45,6 +45,7 @@ setPostViews(get_the_ID()); // 更新文章浏览次数
                     }
                     ?>
                 </div>
+                <?php comments_template(); ?>
             </div>
 
         </div>
